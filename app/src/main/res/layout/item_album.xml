@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="itemAlbum"
+            type="com.vuongthanh.t3h.musicplayer.Album" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <com.vuongthanh.t3h.musicplayer.Object.ImageViewCircle
+            android:id="@+id/imgAlbum"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_album24dp"
+            app:color="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:maxLines="2"
+            android:paddingLeft="10dp"
+            android:text="@{itemAlbum.nameAlbum}"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:text="@{itemAlbum.nameArtist}" />
+
+        <TextView
+            android:id="@+id/txvAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:text="@{itemAlbum.numSong}" />
+    </LinearLayout>
+</layout>

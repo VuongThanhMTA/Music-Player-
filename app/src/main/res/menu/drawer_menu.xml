@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_songs"
+            android:icon="@drawable/ic_music_note_black_24dp"
+            android:title="Songs" />
+        <item
+            android:id="@+id/nav_Albums"
+            android:icon="@drawable/ic_album_black_24dp"
+            android:title="Albums" />
+        <item
+            android:id="@+id/nav_Artist"
+            android:icon="@drawable/ic_tag_faces_black_24dp"
+            android:title="Artist" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_album_black_24dp"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/icon_music_24"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ececea"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imv_background_SD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/backgroundtemp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#90000000"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_gravity="top"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imv_back_SD"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/arrow_left_white_24dp" />
+
+                    <ImageView
+                        android:id="@+id/imv_more_SD"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_more_vert_24dp" />
+
+                    <ImageView
+                        android:id="@+id/imv_like_SD"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/imv_share_SD"
+                        android:src="@drawable/likewhite" />
+
+                    <ImageView
+                        android:id="@+id/imv_share_SD"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/imv_more_SD"
+                        android:src="@drawable/ic_share_white_24dp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="3.5"
+                    android:gravity="center">
+
+                    <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                        <!--android:layout_width="200dp"-->
+                        <!--android:layout_height="200dp"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:src="@drawable/music_headphone"-->
+                        <!--app:riv_corner_radius="100dip"-->
+                        <!--app:riv_mutate_background="true" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:background="#99777777"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name_song_SD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Name"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_name_Artist_SD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Artist"
+                        android:textColor="#FFFFFF" />
+
+                    <SeekBar
+                        android:id="@+id/sb_play_SD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:outlineAmbientShadowColor="@color/colorBlue" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_time_current_SD"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:text="current"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/tv_time_duration_SD"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="10dp"
+                            android:text="duration"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_play_SD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/im_shuffle_SD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/shufflewhite24" />
+
+                        <ImageView
+                            android:id="@+id/im_prev_SD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="30dp"
+                            android:src="@drawable/ic_previous24dp" />
+
+                        <ImageView
+                            android:id="@+id/im_play_SD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:src="@drawable/button_play_pause" />
+
+                        <ImageView
+                            android:id="@+id/im_next_SD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="30dp"
+                            android:src="@drawable/ic_next24dp" />
+
+                        <ImageView
+                            android:id="@+id/im_replay_SD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/replaywhite24" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+</layout>

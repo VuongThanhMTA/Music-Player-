@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".MainActivity">
+
+        <include
+            android:id="@+id/main_layout"
+            layout="@layout/ui_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/drawer_menu" />
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/lnMenu"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="start"-->
+            <!--android:background="@color/colorBackground"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="2"-->
+                <!--android:background="@color/colorBlue"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingLeft="10dp">-->
+
+                <!--<com.vuongthanh.t3h.musicplayer.Object.ImageViewCircle-->
+                    <!--android:layout_width="60dp"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--android:src="@drawable/avarta2"-->
+                    <!--app:color="@color/colorBlue" />-->
+                <!--&lt;!&ndash;<com.makeramen.roundedimageview.RoundedImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="80dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="80dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@drawable/backgroundtemp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:scaleType="centerCrop"&ndash;&gt;-->
+                <!--&lt;!&ndash;app:riv_corner_radius="30dip"&ndash;&gt;-->
+                <!--&lt;!&ndash;app:riv_border_width="2dip"&ndash;&gt;-->
+                <!--&lt;!&ndash;app:riv_mutate_background="true" />&ndash;&gt;-->
+
+                <!--<TextView-->
+                    <!--style="@android:style/TextAppearance.Large"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Music Player"-->
+                    <!--android:textColor="@color/colorBackground"-->
+                    <!--android:textStyle="bold" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="3"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="10dp"-->
+                <!--android:weightSum="4">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/menu_baihat"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:paddingRight="20dp"-->
+                        <!--android:src="@drawable/ic_music_note_black_24dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:text="Bài hát" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/menu_albums"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:paddingRight="20dp"-->
+                        <!--android:src="@drawable/ic_album_black_24dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:text="Albums" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/menu_artist"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:paddingRight="20dp"-->
+                        <!--android:src="@drawable/ic_tag_faces_black_24dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:text="Nghệ sĩ" />-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="3"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#a6a4a4" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Other"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+    </android.support.v4.widget.DrawerLayout>
+</layout>
